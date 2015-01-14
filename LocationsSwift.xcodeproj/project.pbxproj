@@ -14,6 +14,8 @@
 		8C5AC23C1A6649D2007A8241 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C5AC23B1A6649D2007A8241 /* Images.xcassets */; };
 		8C5AC23F1A6649D2007A8241 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5AC23D1A6649D2007A8241 /* LaunchScreen.xib */; };
 		8C5AC24B1A6649D2007A8241 /* LocationsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5AC24A1A6649D2007A8241 /* LocationsSwiftTests.swift */; };
+		8C5AC2551A664A55007A8241 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5AC2541A664A55007A8241 /* RootViewController.swift */; };
+		8C5AC2571A665103007A8241 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5AC2561A665103007A8241 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		8C5AC2441A6649D2007A8241 /* LocationsSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationsSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C5AC2491A6649D2007A8241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C5AC24A1A6649D2007A8241 /* LocationsSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsSwiftTests.swift; sourceTree = "<group>"; };
+		8C5AC2541A664A55007A8241 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		8C5AC2561A665103007A8241 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +89,9 @@
 				8C5AC23B1A6649D2007A8241 /* Images.xcassets */,
 				8C5AC23D1A6649D2007A8241 /* LaunchScreen.xib */,
 				8C5AC2331A6649D2007A8241 /* LocationsSwift.xcdatamodeld */,
+				8C5AC2561A665103007A8241 /* Event.swift */,
 				8C5AC22F1A6649D2007A8241 /* Supporting Files */,
+				8C5AC2541A664A55007A8241 /* RootViewController.swift */,
 			);
 			path = LocationsSwift;
 			sourceTree = "<group>";
@@ -217,7 +223,9 @@
 			files = (
 				8C5AC2371A6649D2007A8241 /* ViewController.swift in Sources */,
 				8C5AC2351A6649D2007A8241 /* LocationsSwift.xcdatamodeld in Sources */,
+				8C5AC2551A664A55007A8241 /* RootViewController.swift in Sources */,
 				8C5AC2321A6649D2007A8241 /* AppDelegate.swift in Sources */,
+				8C5AC2571A665103007A8241 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

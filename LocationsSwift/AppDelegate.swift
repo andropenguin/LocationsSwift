@@ -13,10 +13,31 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var navigationController: UINavigationController?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // テンプレートからプロジェクトを作ると、次の行ができない。
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        var rootViewController = RootViewController(style: UITableViewStyle.Plain)
+        let context: NSManagedObjectContext?  = self.managedObjectContext
+        if context ==  nil {
+            // エラーを処理する
+            println("context is nil")
+            abort()
+        }
+        // 管理オブジェクトコンテキストをView Controllerに渡す
+        rootViewController.managedObjectContext = context
+        
+        var aNavigationController = UINavigationController(rootViewController: rootViewController)
+        self.navigationController = aNavigationController
+        
+        window?.addSubview(navigationController!.view)
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
